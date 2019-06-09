@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="4" name="Test1(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Selenium.New">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Selenium.New -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="4" name="Test2(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Selenium.New">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Selenium.New -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

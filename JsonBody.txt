@@ -1,0 +1,19 @@
+﻿{
+	"form": {
+		"code": "$code",
+		"email": "$email",
+		"message": "Hello Post Test success",
+		"name": "$name"
+	},
+	"headers": {
+		"address1": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+		"city": "$city",
+		"district": "86",
+		"state": "$state",
+		"province": "$province",
+		"country": "$country"
+	},
+	"json": null,
+	"origin": "78.100.217.219",
+	"url": "http://httpbin.org/post"
+}

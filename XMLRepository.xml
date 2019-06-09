@@ -1,0 +1,188 @@
+<sysLogCollectionService>
+
+	<status>ACTIVE</status>
+
+	<id>103</id>
+
+	<servInstanceId>000</servInstanceId>
+
+	<name>SYSLOG COLLECTION 1</name>
+
+	<description>SYSLOG COLLECTION 1</description>
+
+	<syncStatus>true</syncStatus>
+
+	<enableFileStats>false</enableFileStats>
+
+	<enableDBStats>false</enableDBStats>
+
+	<fileCDRSummaryFlag>false</fileCDRSummaryFlag>
+	<svctype>
+
+		<status>ACTIVE</status>
+
+		<id>11</id>
+
+		<alias>SYSLOG_COLLECTION_SERVICE</alias>
+
+		<description>Syslog Collection Service</description>
+
+		<type>Syslog Collection Service</type>
+
+		<serviceFullClassName>com.elitecore.sm.services.model.SysLogCollectionService
+		</serviceFullClassName>
+
+		<typeOfService>MAIN</typeOfService>
+
+		<serviceCategory>ONLINE</serviceCategory>
+
+	</svctype>
+	<svcExecParams>
+
+		<executeOnStartup>true</executeOnStartup>
+
+		<executionInterval>60</executionInterval>
+
+		<fileBatchSize>20</fileBatchSize>
+
+		<maxThread>200</maxThread>
+
+		<minThread>100</minThread>
+
+		<queueSize>1500000</queueSize>
+
+		<sortingCriteria>LAST_MODIFIED_DATE</sortingCriteria>
+
+		<sortingType>ASCENDING</sortingType>
+
+		<startupMode>Automatic</startupMode>
+
+	</svcExecParams>
+
+	<serverIp>0.0.0.0</serverIp>
+
+	<serverPort>5535</serverPort>
+
+	<netFlowPort>5142</netFlowPort>
+
+	<sktRcvBufferSize>0</sktRcvBufferSize>
+
+	<sktSendBufferSize>0</sktSendBufferSize>
+
+	<newLineCharAvailable>false</newLineCharAvailable>
+
+	<bulkWriteLimit>4000</bulkWriteLimit>
+
+	<maxPktSize>8140</maxPktSize>
+
+	<maxWriteBufferSize>8000</maxWriteBufferSize>
+
+	<isTCPProtocol>false</isTCPProtocol>
+
+	<parallelFileWriteCount>5</parallelFileWriteCount>
+
+	<snmpAlertEnable>false</snmpAlertEnable>
+
+	<snmpTimeInterval>0</snmpTimeInterval>
+
+	<maxIdelCommuTime>60</maxIdelCommuTime>
+	<netFLowClientList>
+
+		<status>ACTIVE</status>
+
+		<id>40</id>
+
+		<name>SYS 10</name>
+
+		<clientIpAddress>192.168.36.132</clientIpAddress>
+
+		<clientPort>5555</clientPort>
+
+		<fileNameFormat>OJT_OJT_S01_SYSLOG{yyyyMMddHHmmssS}.u</fileNameFormat>
+
+		<appendFileSequenceInFileName>true</appendFileSequenceInFileName>
+
+		<appendFilePaddingInFileName>false</appendFilePaddingInFileName>
+
+		<minFileSeqValue>1</minFileSeqValue>
+
+		<maxFileSeqValue>1000</maxFileSeqValue>
+
+		<outFileLocation>/u01/syslog_collection</outFileLocation>
+
+		<rollingType>BOTH</rollingType>
+
+		<volLogRollingUnit>10240</volLogRollingUnit>
+
+		<timeLogRollingUnit>5</timeLogRollingUnit>
+
+		<inputCompressed>true</inputCompressed>
+
+		<snmpAlertEnable>true</snmpAlertEnable>
+
+		<alertInterval>5</alertInterval>
+
+		<nodeAliveRequest>true</nodeAliveRequest>
+
+		<echoRequest>5</echoRequest>
+
+		<requestExpiryTime>3000</requestExpiryTime>
+
+		<requestRetry>5</requestRetry>
+
+		<requestBufferCount>5</requestBufferCount>
+
+	</netFLowClientList>
+	<netFLowClientList>
+
+		<status>ACTIVE</status>
+
+		<id>40</id>
+
+		<name>SYS 9</name>
+
+		<clientIpAddress>192.168.36.132</clientIpAddress>
+
+		<clientPort>3333</clientPort>
+
+		<fileNameFormat>OJT_OJT_S01_SYSLOG{yyyyMMddHHmmssS}.u</fileNameFormat>
+
+		<appendFileSequenceInFileName>true</appendFileSequenceInFileName>
+
+		<appendFilePaddingInFileName>false</appendFilePaddingInFileName>
+
+		<minFileSeqValue>1</minFileSeqValue>
+
+		<maxFileSeqValue>1000</maxFileSeqValue>
+
+		<outFileLocation>/u01/syslog_collection</outFileLocation>
+
+		<rollingType>BOTH</rollingType>
+
+		<volLogRollingUnit>10240</volLogRollingUnit>
+
+		<timeLogRollingUnit>5</timeLogRollingUnit>
+
+		<inputCompressed>true</inputCompressed>
+
+		<snmpAlertEnable>true</snmpAlertEnable>
+
+		<alertInterval>5</alertInterval>
+
+		<nodeAliveRequest>true</nodeAliveRequest>
+
+		<echoRequest>5</echoRequest>
+
+		<requestExpiryTime>3000</requestExpiryTime>
+
+		<requestRetry>5</requestRetry>
+
+		<requestBufferCount>5</requestBufferCount>
+
+	</netFLowClientList>
+
+	<proxyClientEnable>false</proxyClientEnable>
+
+	<proxyServicePort>5145</proxyServicePort>
+
+</sysLogCollectionService>
